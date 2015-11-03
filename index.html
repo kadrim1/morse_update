@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="JS/2.1.3_jquery.min.js"></script>
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
+
+    <script type='text/javascript' src='JS/morsekood_ENG.js'></script>
+
+    <link rel="stylesheet" href="CSS/style.css"/>
+
+    <title>Morse Training</title>
+</head>
+
+<body>
+
+<script language=JavaScript>
+    function clickOnBrowser() {
+        if (event.button === 2) {
+            return false;
+        }
+    }
+
+    if (document.all && !document.getElementById) {
+        document.onmousedown = clickOnBrowser;
+    }
+    document.oncontextmenu = new Function("return false")
+
+</script>
+
+<div id="bg-page"></div>
+<div id="page">
+    <div id="tulemused">
+        <span id="valed"></span> <span id="punktid"></span><span id="sonad"></span><span
+            id="rekord"></span>
+    </div>
+    <div><a href="index_EST.html"><img class="lipud" id="flag_est" src="PICS/flag_EST.png"></a></div>
+    <div><a href="index_ENG.html"><img class="lipud" id="flag_eng" src="PICS/flag_ENG.png"></a></div>
+
+
+    <div id="nupud">
+        <span id='s'>START</span>
+        <span id='replay'>LISTEN AGAIN</span>
+    </div>
+    <div id="kast0">
+        <span id="visual"></span><span id="word"></span>
+    </div>
+    <div id="kast">
+        <p>Morse alphabet:</p>
+        <span id="alpha"></span>
+        <img id="pilt" src="PICS/morse_anima_v2.gif"/>
+    </div>
+
+
+    <div id='sound'></div>
+    <p id="demo"></p>
+
+    <div id="morse_dict"></div>
+
+    <div id="seaded">
+        <div id="speed_ctrl">
+            <label for=rate>SPEED: </label>
+            <input type=range min=0.5 max=2.0 value=1.0 id=rate step=0.1 list=kiirus onchange="speedUpdate(value)">
+            <datalist id=kiirus>
+                <option>0.5</option>
+                <option>0.6</option>
+                <option>0.7</option>
+                <option>0.8</option>
+                <option>0.9</option>
+                <option>1.0</option>
+                <option>1.1</option>
+                <option>1.2</option>
+                <option>1.3</option>
+                <option>1.4</option>
+                <option>1.5</option>
+                <option>1.6</option>
+                <option>1.7</option>
+                <option>1.8</option>
+                <option>1.9</option>
+                <option>2.0</option>
+            </datalist>
+            <output for=rate id=speed>1.0</output>
+        </div>
+        <script>
+            function speedUpdate(kiirus) {
+                document.querySelector('#speed').value = kiirus;
+            }
+        </script>
+        <div id="volume_ctrl">
+            <label for=rate>VOLUME: </label>
+            <input type=range min=0.1 max=1.0 value=0.5 id=volume step=0.1 list=heli onchange="volumeUpdate(value)">
+            <datalist id=heli>
+                <option>0.1</option>
+                <option>0.2</option>
+                <option>0.3</option>
+                <option>0.4</option>
+                <option>0.5</option>
+                <option>0.6</option>
+                <option>0.7</option>
+                <option>0.8</option>
+                <option>0.9</option>
+                <option>1.0</option>
+
+            </datalist>
+            <output for=volume id=heli_tugevus>0.5</output>
+        </div>
+        <script>
+            function volumeUpdate(heli_tugevus) {
+                document.querySelector('#heli_tugevus').value = heli_tugevus;
+            }
+        </script>
+
+    </div>
+    <div id="footer">
+        <div id="game_counter"></div>
+        <div>| Copyright © 2015 Martin Meltsas & K.M.|</div>
+    </div>
+
+
+</div>
+</body>
+</html>

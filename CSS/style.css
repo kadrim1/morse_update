@@ -1,0 +1,207 @@
+
+#page {
+    width: 100%;
+    position: relative;
+
+}
+
+#bg-page {
+    width: 95%;
+    height: 145%;
+    opacity: 0.02;
+    background-image: url("../PICS/Morse_spiral.png");
+    position: absolute;
+    background-repeat: round;
+}
+
+.lipud {
+    width: 20%;
+    height: 20%;
+    max-width: 90px;
+    max-height: 50px;
+
+    border: 1px solid black;
+    float: right;
+    clear: left;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
+#flag_eng {
+    margin-right: 5px;
+    margin-left: 40px;
+}
+
+#visual img {
+
+    position: relative;
+    float: left;
+    margin-left: 5%;
+
+    height: 40%;
+    width: 40%;
+    min-height: 100px;
+    min-width: 100px;
+    max-height: 200px;
+    max-width: 200px;
+
+}
+
+#pilt img {
+    float: right;
+    position: relative;
+    height: 50%;
+    width: 50%;
+    min-height: 50px;
+    min-width: 50px;
+    margin-right: 5%;
+    max-height: 250px;
+    max-width: 250px;
+}
+
+#footer {
+    float: left;
+    clear: both;
+}
+
+#kast {
+    position: relative;
+    margin-bottom: -20px;
+
+    clear: both;
+
+}
+
+#alpha {
+    margin-top: -5%;
+}
+
+#alpha div {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 1em;
+    width: 100px;
+    text-align: center;
+    margin: 0.2%;
+}
+
+#seaded {
+    float: left;
+    clear: both;
+}
+
+#nupud {
+    margin-top: 20px;
+
+    margin-right: 15%;
+    float: left;
+    clear: both;
+
+    font-size: 1em;
+    width: 250px;
+    height: 60px;
+    margin-bottom: 0%;
+}
+
+#s,
+#replay {
+    border: 1px solid blanchedalmond;
+    border-radius: 13px 25px 13px 25px;
+    background-color: blanchedalmond;
+    padding: 10px;
+
+}
+
+#tulemused {
+    margin-left: 5px;
+    margin-right: 3px;
+    font-size: 1em;
+
+}
+
+#kast p {
+    margin-top: -2%;
+}
+
+#word {
+    float: right;
+    margin-top: -4%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 10px;
+    min-width: 150px;
+    display: table;
+    font-size: 1em;
+
+}
+
+#word span {
+
+    margin-left: 7px;
+    margin-right: auto;
+    font-size: 2.5em;
+
+}
+
+#kast0 {
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -2%;
+
+    width: 100%;
+
+}
+
+@media (min-width: 560px) and (max-width: 767px) {
+    #word {
+        font-size: 1.2em;
+
+    }
+
+}
+
+@media (min-width: 768px) {
+    #nupud {
+        font-size: 1.6em;
+    }
+
+    #word span {
+        font-size: 3em;
+    }
+
+    #word {
+        font-size: 1.4em;
+        clear: both;
+
+    }
+
+    .lipud {
+        max-width: 70px;
+        max-height: 30px;
+        border: 1px solid black;
+        float: right;
+        margin-top: 10px;
+    }
+
+    #flag_eng {
+        margin-right: 15px;
+
+    }
+
+    #visual img {
+
+        margin-top: 10px;
+        margin-bottom: 40px;
+        clear: none;
+    }
+
+    #pilt img {
+
+        margin-top: 10px;
+        margin-bottom: 40px;
+        clear: none;
+    }
+
+}
