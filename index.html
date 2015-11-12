@@ -8,7 +8,6 @@
     <script type='text/javascript' src='JS/morsekood_ENG.js'></script>
 
     <link rel="stylesheet" href="CSS/style.css"/>
-
     <title>Morse Training</title>
 </head>
 
@@ -16,7 +15,7 @@
 
 <script language=JavaScript>
     function clickOnBrowser() {
-        if (event.button === 2) {
+        if (event.button == 2) {
             return false;
         }
     }
@@ -30,25 +29,34 @@
 
 <div id="bg-page"></div>
 <div id="page">
-    <div id="tulemused">
-        <span id="valed"></span> <span id="punktid"></span><span id="sonad"></span><span
-            id="rekord"></span>
-    </div>
     <div><a href="index_EST.html"><img class="lipud" id="flag_est" src="PICS/flag_EST.png"></a></div>
     <div><a href="index_ENG.html"><img class="lipud" id="flag_eng" src="PICS/flag_ENG.png"></a></div>
+    <div id="tulemused">
+
+        <span id="valed"></span> <span id="punktid"></span><span id="sonad"></span><span
+            id="rekord"></span><span></span>
 
 
+    </div>
     <div id="nupud">
         <span id='s'>START</span>
         <span id='replay'>LISTEN AGAIN</span>
+
     </div>
+    <span id="word"></span>
+
     <div id="kast0">
-        <span id="visual"></span><span id="word"></span>
+        <span id="visual"></span>
+        <span id="pilt">
+        <img src="PICS/morse_anima_v2.gif"/>
+            </span>
+
     </div>
+
     <div id="kast">
         <p>Morse alphabet:</p>
         <span id="alpha"></span>
-        <img id="pilt" src="PICS/morse_anima_v2.gif"/>
+
     </div>
 
 
