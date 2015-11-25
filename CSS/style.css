@@ -11,7 +11,7 @@
     opacity: 0.02;
     background-image: url("../PICS/Morse_spiral.png");
     position: absolute;
-    background-repeat: round;
+    background-repeat: repeat;
 }
 
 .lipud {
@@ -48,6 +48,7 @@
 }
 
 #pilt img {
+
     float: right;
     position: relative;
     height: 50%;
@@ -74,16 +75,36 @@
 
 #alpha {
     margin-top: -5%;
+
 }
 
 #alpha div {
     display: inline-block;
-    border: 1px solid black;
+    border: 1px solid #6acaff;
     padding: 10px;
     font-size: 1em;
     width: 100px;
     text-align: center;
     margin: 0.2%;
+    border-radius: 13px;
+    background-color: #ECFDFD;
+
+   
+}
+
+#alpha div:hover {
+    background-color: #fffdaf;
+
+}
+
+#kast0 {
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -2%;
+
+    width: 100%;
+
 }
 
 #seaded {
@@ -104,11 +125,17 @@
     margin-bottom: 0%;
 }
 
+#s:hover,
+#replay:hover {
+    background-color: #fffdaf;
+
+}
+
 #s,
 #replay {
-    border: 1px solid blanchedalmond;
-    border-radius: 13px 25px 13px 25px;
-    background-color: blanchedalmond;
+    border: 1px solid #6acaff;
+    border-radius: 13px;
+    background-color: #ECFDFD;
     padding: 10px;
 
 }
@@ -124,6 +151,9 @@
     margin-top: -2%;
 }
 
+#seaded {
+    padding-top: 20px;
+}
 #word {
     float: right;
     margin-top: -4%;
@@ -144,15 +174,7 @@
 
 }
 
-#kast0 {
-    display: inline-block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: -2%;
 
-    width: 100%;
-
-}
 
 @media (min-width: 560px) and (max-width: 767px) {
     #word {
